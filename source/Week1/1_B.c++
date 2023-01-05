@@ -10,6 +10,8 @@ int main()
     {
         if (h2 == 0)
             h2 = 24;
+        if (h1 == 0)
+            h1 = 24;
         if (h1 < h2)
         {
             alarm += (h2 - h1) * 60;
@@ -21,11 +23,11 @@ int main()
         else if (h1 > h2)
         {
             if (m2 > m1)
-                alarm = (24 - (m1 - m2)) * 60 + (m2 - m1);
+                alarm = (24 - (h1 - h2)) * 60 + (m2 - m1);
             else if (m1 > m2)
-                alarm = (24 - (m1 - m2)) * 60 - (m1 - m2);
+                alarm = (24 - (h1 - h2)) * 60 - (m1 - m2);
             else
-                alarm = (24 - (m1 - m2)) * 60;
+                alarm = (24 - (h1 - h2)) * 60;
         }
         else
         {
