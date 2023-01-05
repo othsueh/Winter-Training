@@ -11,6 +11,8 @@ all:
 	g++ 1_J.c++ -o 1_J
 	g++ 1_K.c++ -o 1_K
 	g++ 1_L.c++ -o 1_L
+	g++ 1_M.c++ -o 1_M
+	g++ 1_N.c++ -o 1_N
 clean:
 	rm 1_A
 	rm 1_B
@@ -24,3 +26,5 @@ clean:
 	rm 1_J
 	rm 1_K
 	rm 1_L
+	rm 1_M
+	rm 1_N
