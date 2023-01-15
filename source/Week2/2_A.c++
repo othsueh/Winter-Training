@@ -13,23 +13,27 @@ int main()
     {
         step = 0;
         c++;
+        avg = 0;
         for (size_t i = 0; i < n; i++)
         {
             cin >> stack[i];
             avg += stack[i];
         }
-        avg /= n;
+        avg = avg / n;
         for (size_t i = 0; i < n; i++)
         {
-            if(stack[i] > avg){
-                step += stack[i] -avg;
+            if (stack[i] > avg)
+            {
+                step += stack[i] - avg;
             }
-            else if(stack[i] < avg){
+            else if (stack[i] < avg)
+            {
                 step += avg - stack[i];
             }
         }
-        step /= 2;
+        step = step / 2;
         cout << "Set #" << c << '\n';
-        cout << "The minimum number of moves is " << step << ".\n";
+        cout << "The minimum number of moves is " << step << ".\n"
+             << '\n';
     }
 }
