@@ -1,8 +1,8 @@
 #include <stdio.h>
-
+#define LIMIT 4
 int main()
 {
-    int xy[4][2];
+    int xy[LIMIT][2];
     char c;
     scanf(" %c",&c);
     for(size_t i = 0; i < 2; i++){
