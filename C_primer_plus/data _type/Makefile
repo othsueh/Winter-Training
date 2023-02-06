@@ -4,6 +4,8 @@ all:
 	gcc limit.c -o limit
 	gcc beep.c -o beep
 	gcc escape.c -o escape
+	gcc manydice.c diceroll.c -o manydice
+	gcc testorigin.c testextern1.c -o test
 
 clean:
 	rm octal_16
@@ -11,3 +13,5 @@ clean:
 	rm limit
 	rm beep
 	rm escape
+	rm manydice
+	rm test
