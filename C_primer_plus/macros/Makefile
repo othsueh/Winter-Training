@@ -1,4 +1,3 @@
-all: 
 	gcc macros01.c -o macros01
 	gcc macros02.c -o macros02
 	gcc macros03.c -o macros03
